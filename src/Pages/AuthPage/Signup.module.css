@@ -1,0 +1,91 @@
+.interface-container {
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+}
+.image1 {
+  width: 620px;
+  height: 600px;
+  position: absolute;
+  top: 50px;
+  left: -70px;
+  transform: rotate(40.4deg)
+}
+
+.image2 {
+  width: 650px;
+  height: 600px;
+  position: absolute;
+  top: 220px;
+  left: 180px;
+  transform: rotate(154.15deg)
+}
+
+.blue-div,
+.white-div {
+  flex: 1;
+}
+
+.white-div {
+  background-color: white;
+}
+
+.blue-div {
+  background-image: linear-gradient(to bottom,#0B3B6D, #1572D3 );
+}
+
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 5px
+}
+.inputdiv {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding-right: 10px
+}
+
+.input {
+  width: 100%;
+  background-color: #eaeaea;
+  height: 56px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px
+}
+
+.contact {
+  background-color: #eaeaea;
+  width: 400px;
+  border-radius: 10px;
+  padding-right: 10px
+}
+
+.contactinput {
+  width: 92%;
+  background-color: #eaeaea;
+  height: 56px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px
+}
+
+.select {
+  background-color: #eaeaea;
+  width: 98%;
+  border-radius: 10px;
+  padding-right: 10px;
+  height: 40px;
+  border: none;
+  outline: none
+}
+.button {
+  border: none;
+  width: 400px;
+  height: 48px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #1572D3, #0B3B6D);
+  color: white;
+}

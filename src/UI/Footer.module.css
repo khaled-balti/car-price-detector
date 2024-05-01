@@ -1,0 +1,52 @@
+.title {
+    width: 148px;
+    height: 44px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    color: #3563E9;
+    letter-spacing: -3%;
+}
+.description {
+    width: 292px;
+    height: 48px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #666262;
+    letter-spacing: -3%;
+}
+.menuitem {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #666262;
+    letter-spacing: -3%;
+}
+.menu {
+    width: 292px;
+    height: 48px;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -3%;
+}
+.copyright  {
+    width: 292px;
+    height: 48px;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: -3%;
+}

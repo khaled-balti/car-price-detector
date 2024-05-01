@@ -1,0 +1,20 @@
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 86px;
+  line-height: 86px;
+}
+.paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 36px;
+}
+.text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-family: 500;
+    text-align: center;
+}

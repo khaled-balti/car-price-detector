@@ -1,0 +1,75 @@
+.interface-container {
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .blue-div,
+  .white-div {
+    flex: 1;
+  }
+  
+  .white-div {
+    background-color: white;
+  }
+  
+  .blue-div {
+    background-image: linear-gradient(to bottom,#0B3B6D, #1572D3 );
+  }
+  .image2 {
+    width: 600px;
+    height: 470px;
+    position: absolute;
+  }
+  .image1 {
+    width: 730px;
+    height: 730px;
+  }
+  .label {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px
+  }
+
+  .message {
+    width: 400px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .label {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .inputdiv {
+    width: 400px;
+    margin-bottom: 33px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    height: 56px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .inputdiv1 {
+    width: 95%;
+    background-color: #eaeaea;
+    height: 56px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .button {
+    border: none;
+    width: 400px;
+    height: 48px;
+    border-radius: 10px;
+    color: white;
+  }

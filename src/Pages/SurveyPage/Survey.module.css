@@ -1,0 +1,42 @@
+.rightcont {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #1572D3, #0B3B6D);
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+.leftcont {
+    height: 100%;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.bigTitle {
+    color: white;
+    width: 540px;
+    height: 317px;
+    font-size: 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: 63px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.imagecar {
+    width: 440px;
+    height: 300px;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%) rotateY(180deg);
+}
+
+.imagecarcond {
+    width: 540px;
+    height: 260px;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+}
