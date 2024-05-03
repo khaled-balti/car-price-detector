@@ -2,15 +2,6 @@ import React from 'react'
 import classes from './VehiculeCondition4.module.css'
 import Stepper from './Stepper'
 const VehiculeCondition4 = ({setStep, step, infos, setInfos}) => {
-    const handleFrontTireChange = (e) => {
-        setInfos({...infos, frontTire: e.target.value})
-    }
-    const handleRearTireChange = (e) => {
-        setInfos({...infos, rearTire: e.target.value})
-    }
-    const handleSpareWheelChange = (e) => {
-        setInfos({...infos, spareWheel: e.target.value})
-    }
   return (
     <div className='d-flex flex-column align-items-center'>
             <h4 className={`${classes.title} mx-5 mb-4 px-0 py-5`}>Vehicle Specifications</h4>
@@ -18,7 +9,7 @@ const VehiculeCondition4 = ({setStep, step, infos, setInfos}) => {
             <div className='container-fluid px-5'>
                 <div className='mb-3'>
                     <p className={classes.text}>Front tire condition</p>
-                    <select className={classes.select} onChange={handleFrontTireChange}>
+                    <select className={classes.select}>
                         <option value="" disabled selected hidden>Front tire condition</option>
                         <option value="good">Good</option>
                         <option value="medium">Medium</option>
@@ -27,7 +18,7 @@ const VehiculeCondition4 = ({setStep, step, infos, setInfos}) => {
                 </div>
                     <div className='mb-3'>
                         <p className={classes.text}>Condition of rear tires</p>
-                        <select className={classes.select} onChange={handleRearTireChange}>
+                        <select className={classes.select}>
                             <option value="" disabled selected hidden>Condition of rear tires</option>
                             <option value="good">Good</option>
                             <option value="medium">Medium</option>
@@ -36,7 +27,7 @@ const VehiculeCondition4 = ({setStep, step, infos, setInfos}) => {
                     </div>
                     <div className='mb-3'>
                         <p className={classes.text}>Spare wheel</p>
-                        <select className={classes.select} onChange={handleSpareWheelChange}>
+                        <select className={classes.select}>
                             <option value="" disabled selected hidden>Spare wheel</option>
                             <option value="good">Good</option>
                             <option value="medium">Medium</option>

@@ -1,0 +1,25 @@
+.bigContainer {
+    background-color: white;
+    height: 130px;
+    border-radius: 10px;
+}
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: #90A3BF;
+}
+.select,
+.select:focus {
+    border: none
+}
+
+.radio {
+    width: 24px;
+    height: 24px;
+    background-color: #3563E9;
+}

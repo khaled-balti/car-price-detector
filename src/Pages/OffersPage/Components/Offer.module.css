@@ -1,0 +1,30 @@
+.offer {
+    border-radius: 10px;
+    height: 420px;
+    background-color: white;
+}
+.name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #1A202C;
+}
+.theme {
+    font-size: 14px;
+    font-weight: 700;
+    color: #90A3BF;
+}
+.image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+.caract {
+    font-size: 14px;
+    color: #90A3BF;
+}
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}

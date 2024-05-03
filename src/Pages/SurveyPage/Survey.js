@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import classes from './Survey.module.css'
 import Mode from './Components/Mode'
+import { data } from '../../cars'
 import SelectModeCar from '../../images/selectmode.png'
 import Difficulty from './Components/Difficulty'
 import CarInfos from './Components/CarInfos'
@@ -17,44 +18,21 @@ import VehiculeCondition7 from './Components/VehiculeCondition7'
 const Survey = () => {
   const [step, setStep] = useState(1)
   const [infos, setInfos] = useState({
-    mode: "buyer",
-    difficulty: "basic",
-    brand: "",
-    model: "",
-    version: "",
-    fuel: "essence",
-    geabox: "essence",
-    kilometers: "",
-    registrationDate: "",
-    manufacturingDate: "",
-    generalCondition: "",
-    ownersNumber: 0,
-    isAccidented: false,
-    exterior: "",
-    interior: "",
-    truck: "",
-    oilConsumption: "",
-    maintenance: "",
-    frontTire: "",
-    rearTire: "",
-    spareWheel: "",
-    lights: false,
-    suspensions: false,
-    brakes: false,
-    motor: false,
-    stearing: false,
-    gearboxCond: false,
-    ownership: "",
-    usage: "",
-    imported: false,
+    marque: "",
+    modele: "",
+    energie: "essence",
+    boite: "automatique",
+    kilometrage: "",
+    annee: "",
+    puissance_fiscale: "",
   })
   return (
-    <div className='container-fluid d-flex justify-content-center align-items-center mt-5' style={{backgroundColor: "#e9e9e9"}}>
+    <div className='container-fluid d-flex justify-content-center align-items-center' style={{backgroundColor: "#e9e9e9", marginTop: "150px"}}>
       <div className='d-flex' style={{width: '1242px', height: '600px'}}>
         <div className={`w-50 bg-light ${classes.leftcont}`}>
-          {step === 1 && <Mode setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}
-          {step === 2 && <Difficulty setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}
-          {step === 3 && <CarInfos setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}
+          {step === 1 && <Mode setStep={setStep} step={step} />}
+          {step === 2 && <Difficulty setStep={setStep} step={step} />}
+          {step === 3 && <CarInfos setStep={setStep} step={step} data={data} setInfos={setInfos} infos={infos} />}
           {step === 4 && <DriveTrain setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}
           {step === 5 && <HistoryInfos setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}
           {step === 6 && <VehiculeCondition1 setStep={setStep} step={step} setInfos={setInfos} infos={infos} />}

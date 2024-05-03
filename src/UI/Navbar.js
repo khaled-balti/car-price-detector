@@ -1,12 +1,26 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, {useState} from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import classes from './Navbar.module.css'
+import Loop from './Loop'
+import Filter from './Filter'
 
-const Navbar = () => {
+const Navbar = ({setCars, offers}) => {
+  const location = useLocation()
+  const filterByName = (e) => {
+    console.log(e.target.value)
+    setCars(offers.filter(offers => offers.name.startsWith(e.target.value)))
+  }
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light px-5" style={{minHeight: '100px'}}>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light px-5 position-fixed" style={{minHeight: '100px', width: '100%', zIndex: 3}}>
         <div className="container-fluid">
-          <div className='fs-3' style={{fontWeight: 500}}>LOGO</div>
+          <div className='d-flex align-items-center'>
+            <p className='fs-3 me-5 mt-3' style={{fontWeight: 500}}>LOGO</p>
+            {location.pathname === '/offers' && <div className={`d-flex ${classes.fullinput} justify-content-evenly align-items-center`}>
+              <Loop/>
+              <input type='text' className={classes.search} name='name' style={{width: '80%', height: '30px'}} onChange={filterByName} />
+              <Filter/>
+            </div>}
+          </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -19,9 +33,6 @@ const Navbar = () => {
                 <NavLink className={({isActive}) => isActive ? classes.active : classes.link} to="/offers" end>Offers</NavLink>
               </li>
               <li className="nav-item me-5 w-100 text-center">
-                <NavLink className={({isActive}) => isActive ? classes.active : classes.link} to="/about" end>About</NavLink>
-              </li>
-              <li className="nav-item me-5 w-100 text-center">
                 <NavLink className={({isActive}) => isActive ? classes.active : classes.link} to="/contact" end>Contact</NavLink>
               </li>
               <li className="nav-item me-5 w-100 text-center">
@@ -31,7 +42,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    );
+    )
   }
 
 
