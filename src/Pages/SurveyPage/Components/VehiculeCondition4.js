@@ -11,27 +11,28 @@ const VehiculeCondition4 = ({setStep, step, infos, setInfos}) => {
                     <p className={classes.text}>Front tire condition</p>
                     <select className={classes.select}>
                         <option value="" disabled selected hidden>Front tire condition</option>
-                        <option value="good">Good</option>
-                        <option value="medium">Medium</option>
-                        <option value="low">Low</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Need change">Need change</option>
                     </select>
                 </div>
                     <div className='mb-3'>
                         <p className={classes.text}>Condition of rear tires</p>
                         <select className={classes.select}>
-                            <option value="" disabled selected hidden>Condition of rear tires</option>
-                            <option value="good">Good</option>
-                            <option value="medium">Medium</option>
-                            <option value="low">Low</option>
+                        <option value="" disabled selected hidden>Condition of rear tires</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Need change">Need change</option>
                         </select>
                     </div>
                     <div className='mb-3'>
                         <p className={classes.text}>Spare wheel</p>
                         <select className={classes.select}>
                             <option value="" disabled selected hidden>Spare wheel</option>
-                            <option value="good">Good</option>
-                            <option value="medium">Medium</option>
-                            <option value="low">Low</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
                         </select>
                     </div>
             </div>

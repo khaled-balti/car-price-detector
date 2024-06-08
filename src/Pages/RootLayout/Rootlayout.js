@@ -51,11 +51,12 @@ const Rootlayout = () => {
     },
   ]
   const [cars, setCars] = useState(offers)
+  const [price, setPrice] = useState("")
   return (
     <Fragment>
         <Navbar offers={offers} cars={cars} setCars={setCars}/>
         <main className='overflow-hidden' style={{backgroundColor: "#e9e9e9"}}>
-            <Outlet context={[cars]} />
+            <Outlet context={[cars, price, setPrice]} />
         </main>
     </Fragment>
   )

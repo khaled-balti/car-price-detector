@@ -18,9 +18,10 @@ const VehiculeCondition1 = ({setStep, step, infos, setInfos}) => {
                     <p className={classes.text}>Car's general condition</p>
                     <select className={classes.select}>
                         <option value="" disabled selected hidden>Car's general condition</option>
-                        <option value="good">Good</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
+                        <option value="Excellent">Excellent (as good as new)</option>
+                        <option value="Good">Good (minor wear)</option>
+                        <option value="Medium">Medium (moderate wear)</option>
+                        <option value="Mediocre">Mediocre (in need of repair)</option>
                     </select>
                 </div>
                 <div className='mb-3'>
@@ -30,6 +31,7 @@ const VehiculeCondition1 = ({setStep, step, infos, setInfos}) => {
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
+                        <option value="4">Other</option>
                     </select>
                 </div>
                 <div className='container px-0'>

@@ -11,27 +11,29 @@ const VehiculeCondition2 = ({setStep, step, infos, setInfos}) => {
                     <p className={classes.text}>Exterior of the vehicule</p>
                     <select className={classes.select} >
                         <option value="" disabled selected hidden>Exterior of the vehicule</option>
-                        <option value="good">Good</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
+                        <option value="New">New</option>
+                        <option value="Microfracturing">Microfracturing</option>
+                        <option value="Stripes">Stripes</option>
+                        <option value="Damage">Damage</option>
                     </select>
                 </div>
                     <div className='mb-3'>
                         <p className={classes.text}>Vehicule interior</p>
                         <select className={classes.select}>
                             <option value="" disabled selected hidden>Vehicule interior</option>
-                            <option value="good">Good</option>
-                            <option value="medium">Medium</option>
-                            <option value="hard">Hard</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Bad">Bad</option>
                         </select>
                     </div>
                     <div className='mb-3'>
                     <p className={classes.text}>Vehicule truck</p>
                         <select className={classes.select}>
                             <option value="" disabled selected hidden>Vehicule truck</option>
-                            <option value="good">Good</option>
-                            <option value="medium">Medium</option>
-                            <option value="hard">Hard</option>
+                            <option value="In town">In town</option>
+                            <option value="In the countryside">In the countryside</option>
+                            <option value="In suburbia">In suburbia</option>
                         </select>
                     </div>
             </div>

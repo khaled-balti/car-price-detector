@@ -10,6 +10,7 @@ import Contact from './Pages/ContactPage/Contact';
 import Login from './Pages/AuthPage/Login';
 import Signup from './Pages/AuthPage/Signup';
 import Survey from './Pages/SurveyPage/Survey';
+import Result from './Pages/SurveyPage/Components/Result';
 function App() {
   const router = createBrowserRouter([
     { path: '/' , element: <Rootlayout />, children: [
@@ -18,6 +19,7 @@ function App() {
       {path: 'about', element: <About/>},
       {path: 'contact', element: <Contact/>},
       {path: 'survey', element: <Survey/>},
+      {path: 'result', element: <Result/>},
     ]},
     {path: '/login', element: <Login/>},
     {path: '/signup', element: <Signup/>}

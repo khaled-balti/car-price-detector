@@ -6,7 +6,7 @@ import OtherFilters from './Components/OtherFilters'
 import Offer from './Components/Offer'
 import { useOutletContext } from 'react-router'
 const Offers = () => {
-  const [cars] = useOutletContext()
+  const [cars, price, setPrice] = useOutletContext();
   return (
     <div className='container-fluid p-0 ' style={{marginTop: '100px'}}>
       <div className='row'>

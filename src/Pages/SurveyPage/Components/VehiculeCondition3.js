@@ -12,9 +12,9 @@ const VehiculeCondition3 = ({setStep, step, infos, setInfos}) => {
                     <p className={classes.text}>Oil consumption</p>
                     <select className={classes.select} >
                         <option value="" disabled selected hidden>Oil consumption</option>
-                        <option value="good">Good</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
+                        <option value="Normal">Normal consumption</option>
+                        <option value="Moderate">Moderate consumption</option>
+                        <option value="Excessive">Excessive consumption</option>
                     </select>
                 </div>
                 <div className='container px-0'>

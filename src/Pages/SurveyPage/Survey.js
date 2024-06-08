@@ -20,8 +20,8 @@ const Survey = () => {
   const [infos, setInfos] = useState({
     marque: "",
     modele: "",
-    energie: "essence",
-    boite: "automatique",
+    energie: "Essence",
+    boite: "Automatique",
     kilometrage: "",
     annee: "",
     puissance_fiscale: "",

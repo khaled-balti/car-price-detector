@@ -1,18 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import classes from "./VehiculeCondition7.module.css";
 import axios from "axios";
 import Stepper from "./Stepper";
 const VehiculeCondition7 = ({ setStep, step, infos, setInfos }) => {
   const [imported, setImported] = useState(1);
-  const [price, setPrice] = useState("")
-
+  const [cars, price, setPrice] = useOutletContext();
   const fetchData = async () => {
     try {
-      const response = await axios.post("http://localhost:6000/predict", {
-        ...infos,
-      });
+      const response = await axios.post("http://localhost:5000/predict", infos);
       console.log("Response:", response.data); // Log the response to check its contents
-      setPrice(response.data)
+      setPrice(response.data.prix);
       // Do something with the data if needed
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -98,9 +97,11 @@ const VehiculeCondition7 = ({ setStep, step, infos, setInfos }) => {
         >
           Previous
         </button>
-        <button className={classes.next} onClick={fetchData}>
-          Estimate
-        </button>
+        <Link className="text-black text-decoration-none" to={"/result"}>
+          <button className={classes.next} onClick={fetchData}>
+            Estimate
+          </button>
+        </Link>
       </div>
     </div>
   );
